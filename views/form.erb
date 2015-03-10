@@ -1,0 +1,17 @@
+<h1>See how many times the key word occurs in the text</h1>
+
+<form action="/form">
+	<div class="form-group">
+		<label for="key_word">Key Word:</label>
+		<input id="key_word" name="key_word" class="form-control" type="text">
+		<label>Text:</label>
+		<input id="block_text" name="block_text" class="form-control" type="memo">
+	</div>
+	<button type="submit" class="btn-success">Send</button>
+
+	<% if @how_many > 0 %>
+		<h1>How Many Occurences of <strong><%= @key_word %></strong>: <%= @how_many %></h1>
+	<% else %>
+		<h1>No Occurences found</h1>
+	<% end %>	
+</form>
