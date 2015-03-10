@@ -1,4 +1,4 @@
-class Word_Count
+class WordCount
 
 	def initialize key_word
 		@key_word = key_word.downcase
